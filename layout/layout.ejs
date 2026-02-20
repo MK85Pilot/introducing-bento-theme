@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="<%= config.language || 'zh-CN' %>">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Meta Tags -->
+    <title><%= page.title ? page.title + ' | ' : '' %><%= config.title %></title>
+    
+    <% 
+    // 收集关键词
+    var keywords = [];
+    if (page.tags && page.tags.length) {
+        page.tags.forEach(function(tag) {
+            keywords.push(tag.name);
+        });
+    }
+    if (page.keywords) {
+        keywords.push(page.keywords);
+    }
+    if (theme.site && theme.site.keywords) {
+        keywords.push(theme.site.keywords);
+    }
+    if (config.keywords) {
+        keywords.push(config.keywords);
+    }
+    var uniqueKeywords = [...new Set(keywords)].join(', ');
+    %>
+    <% if (uniqueKeywords) { %>
+    <meta name="keywords" content="<%= uniqueKeywords %>">
+    <% } %>
+    
+    <% 
+    // 收集描述
+    var description = '';
+    if (page.description) {
+        description = page.description;
+    } else if (page.excerpt) {
+        description = strip_html(page.excerpt).substring(0, 160);
+    } else if (config.description) {
+        description = config.description;
+    } else if (theme.site && theme.site.description) {
+        description = theme.site.description;
+    }
+    %>
+    <% if (description) { %>
+    <meta name="description" content="<%= description %>">
+    <% } %>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="<%= page.permalink || config.url + url_for(page.path) %>">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="<%= page.type || 'website' %>">
+    <meta property="og:url" content="<%= page.permalink || config.url + url_for(page.path) %>">
+    <meta property="og:title" content="<%= page.title || config.title %>">
+    <% if (description) { %>
+    <meta property="og:description" content="<%= description %>">
+    <% } %>
+    <meta property="og:site_name" content="<%= config.title %>">
+    <% if (page.cover || theme.site && theme.site.cover) { %>
+    <meta property="og:image" content="<%= page.cover || theme.site.cover %>">
+    <% } %>
+    <% if (config.language) { %>
+    <meta property="og:locale" content="<%= config.language %>">
+    <% } %>
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="<%= page.permalink || config.url + url_for(page.path) %>">
+    <meta property="twitter:title" content="<%= page.title || config.title %>">
+    <% if (description) { %>
+    <meta property="twitter:description" content="<%= description %>">
+    <% } %>
+    <% if (page.cover || theme.site && theme.site.cover) { %>
+    <meta property="twitter:image" content="<%= page.cover || theme.site.cover %>">
+    <% } %>
+    
+    <!-- Article Metadata -->
+    <% if (page.date) { %>
+    <meta property="article:published_time" content="<%= date(page.date, 'YYYY-MM-DDTHH:mm:ssZ') %>">
+    <% } %>
+    <% if (page.updated) { %>
+    <meta property="article:modified_time" content="<%= date(page.updated, 'YYYY-MM-DDTHH:mm:ssZ') %>">
+    <% } %>
+    <% if (page.author) { %>
+    <meta property="article:author" content="<%= page.author %>">
+    <% } else if (config.author) { %>
+    <meta property="article:author" content="<%= config.author %>">
+    <% } %>
+    <% if (page.tags && page.tags.length) { %>
+    <% page.tags.forEach(function(tag) { %>
+    <meta property="article:tag" content="<%= tag.name %>">
+    <% }); %>
+    <% } %>
+    
+    <!-- RSS Feed -->
+    <% if (theme.feed) { %>
+    <link rel="alternate" href="<%= theme.feed.path %>" title="<%= config.title %>" type="application/atom+xml">
+    <% } %>
+    
+    <%- css('css/style') %>
+    <%- js('js/code-copy') %>
+    <%- js('js/code-style') %>
+    <%- js('js/search') %>
+    <%- js('js/image-handler') %>
+</head>
+<body>
+    <div class="container">
+        <%- partial('_partial/header') %>
+        
+        <%- body %>
+        
+        <%- partial('_partial/footer') %>
+    </div>
+</body>
+</html>

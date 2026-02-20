@@ -1,0 +1,9 @@
+{
+  "name": "hexo-theme-bento",
+  "version": "1.0.0",
+  "description": "A modern Bento Grid style Hexo theme",
+  "main": "index.js",
+  "keywords": ["hexo", "theme", "bento", "grid"],
+  "author": "S.K.",
+  "license": "MIT"
+}

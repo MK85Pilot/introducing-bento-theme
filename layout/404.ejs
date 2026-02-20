@@ -1,0 +1,41 @@
+<!-- 404 页面 -->
+<div class="error-page">
+    <div class="error-container">
+        <div class="error-number">404</div>
+        <h1 class="error-title">页面未找到</h1>
+        <p class="error-description">
+            抱歉，您访问的页面似乎已迷失在数字海洋中。
+        </p>
+        <div class="error-actions">
+            <a href="<%= url_for('/') %>" class="error-btn primary">
+                <span>返回首页</span>
+                <span class="arrow">→</span>
+            </a>
+            <a href="<%= url_for('/archives/') %>" class="error-btn secondary">
+                浏览归档
+            </a>
+        </div>
+        
+        <div class="error-suggestions">
+            <span class="suggestions-title">您可能在寻找：</span>
+            <div class="suggestions-list">
+                <% 
+                // 获取最新文章
+                var recentPosts = site.posts.sort('-date').limit(3);
+                recentPosts.each(function(post) { 
+                %>
+                    <a href="<%= url_for(post.path) %>" class="suggestion-link">
+                        <span class="suggestion-arrow">→</span>
+                        <span class="suggestion-text"><%= post.title %></span>
+                    </a>
+                <% }); %>
+            </div>
+        </div>
+    </div>
+    
+    <div class="error-decoration">
+        <div class="decoration-circle circle-1"></div>
+        <div class="decoration-circle circle-2"></div>
+        <div class="decoration-circle circle-3"></div>
+    </div>
+</div>

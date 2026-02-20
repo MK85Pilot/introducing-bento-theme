@@ -1,0 +1,86 @@
+<!-- Hero 区域 -->
+<% if (theme.hero.status.enabled && page.current === 1) { %>
+<header class="hero">
+    <div class="status-pill">
+        <div class="status-dot"></div>
+        <%= theme.hero.status.text %>
+    </div>
+    <h1>
+        <%- theme.hero.title %>
+    </h1>
+    <p class="intro-text">
+        <%= theme.hero.intro %>
+    </p>
+</header>
+<% } %>
+
+<!-- Skills (Bento Grid 风格) -->
+<% if (theme.skills.enabled && page.current === 1) { %>
+<section>
+    <span class="section-title"><%= theme.skills.title %></span>
+    <div class="bento-grid">
+        <% theme.skills.items.forEach(function(item) { %>
+            <div class="bento-item <%= item.layout %>">
+                <% if (item.type === 'core') { %>
+                    <div class="decoration-circle"></div>
+                <% } %>
+                <% if (item.icon) { %>
+                    <div class="skill-icon"><%= item.icon %></div>
+                <% } %>
+                <div>
+                    <% if (item.label) { %>
+                        <div class="bento-label"><%= item.label %></div>
+                    <% } %>
+                    <h3 class="bento-title"><%= item.title %></h3>
+                    <% if (item.description) { %>
+                        <p style="font-size: 0.9rem; color: #666; margin-top: 10px;">
+                            <%= item.description %>
+                        </p>
+                    <% } %>
+                    <% if (item.type === 'learning') { %>
+                        <div style="background: #f0f0f0; height: 6px; width: 100%; border-radius: 3px; margin-top: 15px; margin-bottom: 15px;">
+                            <div style="background: var(--accent); height: 100%; width: <%= item.progress %>%; border-radius: 3px;"></div>
+                        </div>
+                    <% } %>
+                </div>
+                <% if (item.tags && item.tags.length > 0) { %>
+                    <div class="tags">
+                        <% item.tags.forEach(function(tag) { %>
+                            <span class="tag"><%= tag %></span>
+                        <% }); %>
+                    </div>
+                <% } %>
+            </div>
+        <% }); %>
+    </div>
+</section>
+<% } %>
+
+<!-- 文章列表 -->
+<% if (theme.blog.enabled) { %>
+<section>
+    <span class="section-title"><%= theme.blog.title %></span>
+    <div class="post-list">
+        <% page.posts.each(function(post) { %>
+            <article class="post-item">
+                <div class="post-date"><%= date(post.date, 'MMM DD, YYYY') %></div>
+                <div class="post-content">
+                    <h3 class="post-title">
+                        <a href="<%= url_for(post.path) %>" style="text-decoration: none; color: inherit;">
+                            <%= post.title %>
+                        </a>
+                    </h3>
+                    <% if (post.excerpt) { %>
+                        <p class="post-excerpt"><%= post.excerpt %></p>
+                    <% } %>
+                </div>
+                <div class="arrow-icon">→</div>
+            </article>
+        <% }); %>
+    </div>
+    
+    <% if (page.total > 1) { %>
+        <div class="pagination"><%- paginator() %></div>
+    <% } %>
+</section>
+<% } %>

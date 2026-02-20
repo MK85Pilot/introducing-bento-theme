@@ -1,0 +1,99 @@
+# Bento Theme Configuration
+
+# Site Settings
+site:
+  title: 北望长安
+  subtitle: Digital Craftsman
+  description: Designing logic, crafting aesthetics.
+  author: 张三
+
+# Navigation Menu
+menu:
+  - name: Work
+    url: /
+  - name: Journal
+    url: /archives/
+  - name: About
+    url: /about/
+
+# Hero Section
+hero:
+  status:
+    enabled: true
+    text: Available for freelance projects
+    dot_color: "#2ecc71"
+  title: Designing logic,<br><span>crafting</span> aesthetics.
+  intro: 我是一名追求代码诗意的独立开发者。在这里记录技术碎片、生活杂感，以及那些未完成的奇怪项目。
+
+# Skills Section (Bento Grid)
+skills:
+  enabled: true
+  title: The Toolkit
+  items:
+    - type: core
+      layout: item-lg
+      label: Core Stack
+      title: Frontend & Architecture
+      icon: ""
+      tags: ["React", "Vue 3", "TypeScript", "Next.js", "Tailwind"]
+    - type: design
+      layout: ""
+      label: ""
+      title: UI/UX Design
+      icon: "🎨"
+      tags: ["Figma", "Blender"]
+    - type: backend
+      layout: item-tall
+      label: Backend & Ops
+      title: Full Stack Coverage
+      icon: "⚡"
+      description: 不只是画页面。我关注性能优化、CI/CD 自动化部署以及服务端无服务器架构的实现。
+      tags: ["Node.js", "Python", "Docker", "PostgreSQL"]
+    - type: photography
+      layout: ""
+      label: ""
+      title: Photography
+      icon: "📷"
+      description: Analog & Digital
+    - type: learning
+      layout: item-lg
+      label: Currently Learning
+      title: WebGPU & 3D Shaders
+      icon: ""
+      progress: 65
+      tags: ["Three.js", "GLSL"]
+
+# Blog Section
+blog:
+  enabled: true
+  title: Latest Notes
+  per_page: 10
+
+
+
+# Footer
+footer:
+  social:
+    - name: Twitter / X
+      url: "#"
+    - name: GitHub
+      url: "#"
+    - name: Instagram
+      url: "#"
+  contact:
+    - name: hello@sk.design
+      url: "mailto:hello@sk.design"
+  copyright: "&copy; 2024 S.K."
+  tagline: Crafted with code, not builders.
+
+# Style Settings
+style:
+  colors:
+    bg: "#f4f2ed"
+    text_main: "#1a1a1a"
+    text_muted: "#666"
+    accent: "#d95d39"
+    card_bg: "#ffffff"
+  fonts:
+    serif: "'Georgia', 'Times New Roman', serif"
+    sans: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
