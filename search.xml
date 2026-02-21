@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>介绍 Hexo Bento Theme - 现代化的 Bento Grid 风格博客主题</title>
+    <url>/introducing-bento-theme/</url>
+    <content><![CDATA[<h1 id="Hexo-Bento-Theme-现代化的-Bento-Grid-风格博客主题"><a href="#Hexo-Bento-Theme-现代化的-Bento-Grid-风格博客主题" class="headerlink" title="Hexo Bento Theme - 现代化的 Bento Grid 风格博客主题"></a>Hexo Bento Theme - 现代化的 Bento Grid 风格博客主题</h1><p>Bento Theme 是一个基于 Bento Grid 设计理念的现代化 Hexo 博客主题。它采用简洁优雅的网格布局，专注于内容展示，适合用于个人作品集、技术博客或项目展示。</p>
+<p><img src="https://via.placeholder.com/800x400?text=Bento+Theme+Preview" alt="Bento Theme"></p>
+<h2 id="✨-主要特性"><a href="#✨-主要特性" class="headerlink" title="✨ 主要特性"></a>✨ 主要特性</h2><p>Bento Theme 融合了现代 Web 设计的精华特性：</p>
+<h3 id="🎨-Bento-Grid-布局"><a href="#🎨-Bento-Grid-布局" class="headerlink" title="🎨 Bento Grid 布局"></a>🎨 Bento Grid 布局</h3><p>采用卡片式网格布局，将内容以模块化方式呈现，既美观又实用。每个区块都能独立展示不同类型的内容。</p>
+<h3 id="📱-完全响应式"><a href="#📱-完全响应式" class="headerlink" title="📱 完全响应式"></a>📱 完全响应式</h3><p>无论在桌面、平板还是手机上，都能获得完美的浏览体验。主题使用流式布局和媒体查询，确保在各种设备上都能正常显示。</p>
+<h3 id="⚡-极简高性能"><a href="#⚡-极简高性能" class="headerlink" title="⚡ 极简高性能"></a>⚡ 极简高性能</h3><ul>
+<li>精简的代码结构，无冗余依赖</li>
+<li>优化的 CSS 和 JavaScript</li>
+<li>快速加载，提升用户体验</li>
+</ul>
+<h3 id="🎯-内容优先"><a href="#🎯-内容优先" class="headerlink" title="🎯 内容优先"></a>🎯 内容优先</h3><p>设计理念围绕内容展开，让读者专注于你的文章和作品，而不是花哨的装饰。</p>
+<h3 id="🌈-高度可定制"><a href="#🌈-高度可定制" class="headerlink" title="🌈 高度可定制"></a>🌈 高度可定制</h3><p>通过配置文件轻松自定义颜色、布局、导航菜单等，打造独一无二的个人博客。</p>
+<h2 id="📦-安装步骤"><a href="#📦-安装步骤" class="headerlink" title="📦 安装步骤"></a>📦 安装步骤</h2><h3 id="前置要求"><a href="#前置要求" class="headerlink" title="前置要求"></a>前置要求</h3><p>在安装 Bento Theme 之前，请确保你已经：</p>
+<ol>
+<li>安装了 <a href="https://nodejs.org/">Node.js</a> (建议版本 14.x 或更高)</li>
+<li>安装了 <a href="https://git-scm.com/">Git</a></li>
+<li>创建了 Hexo 博客项目</li>
+</ol>
+<p>如果还没有创建 Hexo 博客，可以使用以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装 Hexo CLI</span></span><br><span class="line">npm install -g hexo-cli</span><br><span class="line"></span><br><span class="line"><span class="comment"># 初始化博客</span></span><br><span class="line">hexo init my-blog</span><br><span class="line"><span class="built_in">cd</span> my-blog</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装依赖</span></span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+
+<h3 id="安装主题"><a href="#安装主题" class="headerlink" title="安装主题"></a>安装主题</h3><p>将 Bento Theme 复制到你的博客主题目录：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 方式一：使用 Git 克隆</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/yourusername/hexo-theme-bento.git themes/bento-theme</span><br><span class="line"></span><br><span class="line"><span class="comment"># 方式二：直接下载</span></span><br><span class="line"><span class="comment"># 将主题文件夹复制到 themes/bento-theme</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="启用主题"><a href="#启用主题" class="headerlink" title="启用主题"></a>启用主题</h3><p>修改博客根目录下的 <code>_config.yml</code> 文件，将主题设置为 <code>bento-theme</code>：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="comment">## Plugins: https://hexo.io/plugins/</span></span><br><span class="line"><span class="comment">## Themes: https://hexo.io/themes/</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">bento-theme</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="⚙️-配置指南"><a href="#⚙️-配置指南" class="headerlink" title="⚙️ 配置指南"></a>⚙️ 配置指南</h2><p>Bento Theme 的配置文件位于 <code>themes/bento-theme/_config.yml</code>。下面详细介绍各个配置项。</p>
+<h3 id="站点基本信息"><a href="#站点基本信息" class="headerlink" title="站点基本信息"></a>站点基本信息</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">site:</span></span><br><span class="line">  <span class="attr">title:</span> <span class="string">S.K.</span>                    <span class="comment"># 站点标题</span></span><br><span class="line">  <span class="attr">subtitle:</span> <span class="string">Digital</span> <span class="string">Craftsman</span>    <span class="comment"># 副标题</span></span><br><span class="line">  <span class="attr">description:</span> <span class="string">Designing</span> <span class="string">logic,</span> <span class="string">crafting</span> <span class="string">aesthetics.</span>  <span class="comment"># 站点描述</span></span><br><span class="line">  <span class="attr">author:</span> <span class="string">S.K.</span>                   <span class="comment"># 作者名称</span></span><br></pre></td></tr></table></figure>
+
+<p>这些信息会显示在网站头部和页脚，也会用于 SEO 优化。</p>
+<h3 id="导航菜单配置"><a href="#导航菜单配置" class="headerlink" title="导航菜单配置"></a>导航菜单配置</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Work</span>          <span class="comment"># 菜单名称</span></span><br><span class="line">    <span class="attr">url:</span> <span class="string">/</span>             <span class="comment"># 链接地址</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Journal</span></span><br><span class="line">    <span class="attr">url:</span> <span class="string">/archives/</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">About</span></span><br><span class="line">    <span class="attr">url:</span> <span class="string">/about/</span></span><br></pre></td></tr></table></figure>
+
+<p>你可以根据需要添加、删除或修改菜单项。<code>url</code> 可以是相对路径（如 <code>/about/</code>）或绝对路径（如 <code>https://example.com</code>）。</p>
+<h3 id="Hero-区域配置"><a href="#Hero-区域配置" class="headerlink" title="Hero 区域配置"></a>Hero 区域配置</h3><p>Hero 区域是首页的焦点区域，用于展示你的状态和核心信息：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">hero:</span></span><br><span class="line">  <span class="attr">status:</span></span><br><span class="line">    <span class="attr">enabled:</span> <span class="literal">true</span>                      <span class="comment"># 是否显示状态指示器</span></span><br><span class="line">    <span class="attr">text:</span> <span class="string">Available</span> <span class="string">for</span> <span class="string">freelance</span> <span class="string">projects</span>  <span class="comment"># 状态文字</span></span><br><span class="line">    <span class="attr">dot_color:</span> <span class="string">&quot;#2ecc71&quot;</span>               <span class="comment"># 状态点颜色（绿色表示可用）</span></span><br><span class="line">  <span class="attr">title:</span> <span class="string">Designing</span> <span class="string">logic,&lt;br&gt;&lt;span&gt;crafting&lt;/span&gt;</span> <span class="string">aesthetics.</span></span><br><span class="line">  <span class="attr">intro:</span> <span class="string">|</span></span><br><span class="line"><span class="string">    我是一名前端开发者，专注于创建优雅的用户体验。</span></span><br><span class="line"><span class="string">    热爱开源，擅长 React、Vue 和 Node.js。</span></span><br></pre></td></tr></table></figure>
+
+<p>在 <code>title</code> 中可以使用 HTML 标签来创建样式效果，比如使用 <code>&lt;span&gt;</code> 标签来突出显示关键词。</p>
+<h3 id="技能展示（Bento-Grid）"><a href="#技能展示（Bento-Grid）" class="headerlink" title="技能展示（Bento Grid）"></a>技能展示（Bento Grid）</h3><p>这是 Bento Theme 的核心功能，使用卡片式布局展示你的技能栈：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">skills:</span></span><br><span class="line">  <span class="attr">enabled:</span> <span class="literal">true</span>                        <span class="comment"># 是否启用技能展示</span></span><br><span class="line">  <span class="attr">title:</span> <span class="string">The</span> <span class="string">Toolkit</span>                   <span class="comment"># 标题</span></span><br><span class="line">  <span class="attr">items:</span></span><br><span class="line">    <span class="comment"># 大卡片 - 核心技能</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">type:</span> <span class="string">core</span></span><br><span class="line">      <span class="attr">layout:</span> <span class="string">item-lg</span>                  <span class="comment"># 大尺寸卡片</span></span><br><span class="line">      <span class="attr">label:</span> <span class="string">Core</span> <span class="string">Stack</span></span><br><span class="line">      <span class="attr">title:</span> <span class="string">Frontend</span> <span class="string">&amp;</span> <span class="string">Architecture</span></span><br><span class="line">      <span class="attr">tags:</span> [<span class="string">&quot;React&quot;</span>, <span class="string">&quot;Vue 3&quot;</span>, <span class="string">&quot;TypeScript&quot;</span>, <span class="string">&quot;Next.js&quot;</span>, <span class="string">&quot;Tailwind&quot;</span>]</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 中卡片 - 后端技能</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">type:</span> <span class="string">backend</span></span><br><span class="line">      <span class="attr">layout:</span> <span class="string">item-md</span></span><br><span class="line">      <span class="attr">label:</span> <span class="string">Backend</span></span><br><span class="line">      <span class="attr">title:</span> <span class="string">Server</span> <span class="string">Side</span></span><br><span class="line">      <span class="attr">tags:</span> [<span class="string">&quot;Node.js&quot;</span>, <span class="string">&quot;Express&quot;</span>, <span class="string">&quot;NestJS&quot;</span>, <span class="string">&quot;PostgreSQL&quot;</span>]</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 小卡片 - 工具</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">type:</span> <span class="string">tools</span></span><br><span class="line">      <span class="attr">layout:</span> <span class="string">item-sm</span></span><br><span class="line">      <span class="attr">label:</span> <span class="string">Tools</span></span><br><span class="line">      <span class="attr">title:</span> <span class="string">Dev</span> <span class="string">Tools</span></span><br><span class="line">      <span class="attr">tags:</span> [<span class="string">&quot;Git&quot;</span>, <span class="string">&quot;Docker&quot;</span>, <span class="string">&quot;AWS&quot;</span>, <span class="string">&quot;Figma&quot;</span>]</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 小卡片 - 设计</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">type:</span> <span class="string">design</span></span><br><span class="line">      <span class="attr">layout:</span> <span class="string">item-sm</span></span><br><span class="line">      <span class="attr">label:</span> <span class="string">Design</span></span><br><span class="line">      <span class="attr">title:</span> <span class="string">UI/UX</span></span><br><span class="line">      <span class="attr">tags:</span> [<span class="string">&quot;Figma&quot;</span>, <span class="string">&quot;Adobe XD&quot;</span>, <span class="string">&quot;Illustrator&quot;</span>]</span><br></pre></td></tr></table></figure>
+
+<p>布局类型说明：</p>
+<ul>
+<li><code>item-lg</code>：大卡片，占据 2x2 网格</li>
+<li><code>item-md</code>：中卡片，占据 2x1 网格</li>
+<li><code>item-sm</code>：小卡片，占据 1x1 网格</li>
+</ul>
+<h3 id="博客列表配置"><a href="#博客列表配置" class="headerlink" title="博客列表配置"></a>博客列表配置</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">blog:</span></span><br><span class="line">  <span class="attr">enabled:</span> <span class="literal">true</span>            <span class="comment"># 是否在首页显示博客列表</span></span><br><span class="line">  <span class="attr">title:</span> <span class="string">Latest</span> <span class="string">Notes</span>      <span class="comment"># 标题</span></span><br><span class="line">  <span class="attr">per_page:</span> <span class="number">10</span>            <span class="comment"># 每页显示文章数量</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="页脚配置"><a href="#页脚配置" class="headerlink" title="页脚配置"></a>页脚配置</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">footer:</span></span><br><span class="line">  <span class="attr">social:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Twitter</span> <span class="string">/</span> <span class="string">X</span></span><br><span class="line">      <span class="attr">url:</span> <span class="string">https://twitter.com/yourusername</span></span><br><span class="line">      <span class="attr">icon:</span> <span class="string">twitter</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">GitHub</span></span><br><span class="line">      <span class="attr">url:</span> <span class="string">https://github.com/yourusername</span></span><br><span class="line">      <span class="attr">icon:</span> <span class="string">github</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">LinkedIn</span></span><br><span class="line">      <span class="attr">url:</span> <span class="string">https://linkedin.com/in/yourusername</span></span><br><span class="line">      <span class="attr">icon:</span> <span class="string">linkedin</span></span><br><span class="line">  <span class="attr">contact:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">hello@example.com</span></span><br><span class="line">      <span class="attr">url:</span> <span class="string">&quot;mailto:hello@example.com&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="📝-创建内容"><a href="#📝-创建内容" class="headerlink" title="📝 创建内容"></a>📝 创建内容</h2><h3 id="创建文章"><a href="#创建文章" class="headerlink" title="创建文章"></a>创建文章</h3><p>使用 Hexo 命令创建新文章：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new post <span class="string">&quot;文章标题&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>这会在 <code>source/_posts/</code> 目录下创建一个 Markdown 文件。文章头部包含 Front-matter：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章标题</span><br><span class="line">date: 2026-02-20 21:00:00</span><br><span class="line">tags:</span><br><span class="line"><span class="bullet">  -</span> 标签1</span><br><span class="line"><span class="bullet">  -</span> 标签2</span><br><span class="line">categories:</span><br><span class="line"><span class="section">  - 分类名称</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="创建页面"><a href="#创建页面" class="headerlink" title="创建页面"></a>创建页面</h3><p>创建独立页面（如关于页面）：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new page about</span><br></pre></td></tr></table></figure>
+
+<p>然后在 <code>source/about/index.md</code> 中编辑内容。</p>
+<h3 id="Markdown-语法示例"><a href="#Markdown-语法示例" class="headerlink" title="Markdown 语法示例"></a>Markdown 语法示例</h3><p>Bento Theme 完全支持标准的 Markdown 语法，同时也支持代码高亮、表格、引用等功能：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section"># 一级标题</span></span><br><span class="line"></span><br><span class="line"><span class="section">## 二级标题</span></span><br><span class="line"></span><br><span class="line"><span class="section">### 三级标题</span></span><br><span class="line"></span><br><span class="line"><span class="strong">**粗体文本**</span></span><br><span class="line"><span class="emphasis">*斜体文本*</span></span><br><span class="line">~~删除线~~</span><br><span class="line"></span><br><span class="line">[<span class="string">链接文本</span>](<span class="link">https://example.com</span>)</span><br><span class="line"></span><br><span class="line">![<span class="string">图片描述</span>](<span class="link">image-url</span>)</span><br><span class="line"></span><br><span class="line"><span class="quote">&gt; 引用文本</span></span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"><span class="bullet">-</span> 列表项1</span><br><span class="line"><span class="bullet">-</span> 列表项2</span><br><span class="line"><span class="bullet">  -</span> 嵌套列表</span><br><span class="line"></span><br><span class="line"><span class="bullet">1.</span> 有序列表项1</span><br><span class="line"><span class="bullet">2.</span> 有序列表项2</span><br><span class="line"></span><br><span class="line"><span class="code">`行内代码`</span></span><br><span class="line"></span><br><span class="line">\<span class="code">```javascript</span></span><br><span class="line"><span class="code">// 代码块</span></span><br><span class="line"><span class="code">function hello() &#123;</span></span><br><span class="line"><span class="code">  console.log(&quot;Hello, World!&quot;);</span></span><br><span class="line"><span class="code">&#125;</span></span><br><span class="line"><span class="code">\```</span></span><br><span class="line"></span><br><span class="line">| 列1 | 列2 | 列3 |</span><br><span class="line">|-----|-----|-----|</span><br><span class="line">| 内容1 | 内容2 | 内容3 |</span><br></pre></td></tr></table></figure>
+
+<h2 id="🎨-样式定制"><a href="#🎨-样式定制" class="headerlink" title="🎨 样式定制"></a>🎨 样式定制</h2><p>所有主题样式都在 <code>themes/bento-theme/source/css/style.css</code> 中。你可以通过修改 CSS 变量来自定义配色方案：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-pseudo">:root</span> &#123;</span><br><span class="line">    <span class="comment">/* 背景色 */</span></span><br><span class="line">    <span class="attr">--bg-color</span>: <span class="number">#f4f2ed</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/* 文字颜色 */</span></span><br><span class="line">    <span class="attr">--text-main</span>: <span class="number">#1a1a1a</span>;</span><br><span class="line">    <span class="attr">--text-muted</span>: <span class="number">#666</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/* 强调色 */</span></span><br><span class="line">    <span class="attr">--accent</span>: <span class="number">#d95d39</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/* 卡片背景 */</span></span><br><span class="line">    <span class="attr">--card-bg</span>: <span class="number">#ffffff</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/* 边框颜色 */</span></span><br><span class="line">    <span class="attr">--border-color</span>: <span class="number">#e0e0e0</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/* 字体 */</span></span><br><span class="line">    <span class="attr">--font-main</span>: -apple-system, BlinkMacSystemFont, <span class="string">&quot;Segoe UI&quot;</span>, Roboto, sans-serif;</span><br><span class="line">    <span class="attr">--font-mono</span>: <span class="string">&quot;SF Mono&quot;</span>, Monaco, <span class="string">&quot;Cascadia Code&quot;</span>, monospace;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>修改这些变量后，整个网站的配色方案会自动更新。</p>
+<h2 id="🚀-开发和部署"><a href="#🚀-开发和部署" class="headerlink" title="🚀 开发和部署"></a>🚀 开发和部署</h2><h3 id="本地开发"><a href="#本地开发" class="headerlink" title="本地开发"></a>本地开发</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 清除缓存</span></span><br><span class="line">hexo clean</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成静态文件</span></span><br><span class="line">hexo generate</span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动本地服务器（默认端口 4000）</span></span><br><span class="line">hexo server</span><br><span class="line"></span><br><span class="line"><span class="comment"># 或使用简写</span></span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<p>访问 <code>http://localhost:4000</code> 查看效果。</p>
+<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 生成静态文件到 public 目录</span></span><br><span class="line">hexo generate</span><br><span class="line"></span><br><span class="line"><span class="comment"># 或使用简写</span></span><br><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+
+<h3 id="部署到远程服务器"><a href="#部署到远程服务器" class="headerlink" title="部署到远程服务器"></a>部署到远程服务器</h3><p>Hexo 支持多种部署方式，最常用的是 Git 部署：</p>
+<ol>
+<li><strong>安装部署插件</strong></li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li><strong>配置部署信息</strong></li>
+</ol>
+<p>在根目录的 <code>_config.yml</code> 中添加：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/username/username.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span></span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li><strong>部署</strong></li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo deploy</span><br><span class="line"></span><br><span class="line"><span class="comment"># 或使用简写</span></span><br><span class="line">hexo d</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成并部署</span></span><br><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
+
+<h2 id="📚-高级功能"><a href="#📚-高级功能" class="headerlink" title="📚 高级功能"></a>📚 高级功能</h2><h3 id="自定义页面模板"><a href="#自定义页面模板" class="headerlink" title="自定义页面模板"></a>自定义页面模板</h3><p>你可以在 <code>themes/bento-theme/layout/</code> 目录下创建自定义的页面模板。例如创建 <code>tags.ejs</code> 来显示标签云：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;%- partial(&#x27;_partial/header&#x27;) %&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;container&quot;&gt;</span><br><span class="line">    &lt;h1&gt;标签&lt;/h1&gt;</span><br><span class="line">    &lt;div class=&quot;tag-cloud&quot;&gt;</span><br><span class="line">        &lt;%- list_tags() %&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;%- partial(&#x27;_partial/footer&#x27;) %&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="添加评论功能"><a href="#添加评论功能" class="headerlink" title="添加评论功能"></a>添加评论功能</h3><p>在主题配置中添加评论系统（如 Disqus、Gitalk 等）：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">comments:</span></span><br><span class="line">  <span class="attr">enabled:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">provider:</span> <span class="string">disqus</span></span><br><span class="line">  <span class="attr">short_name:</span> <span class="string">your-short-name</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="集成分析工具"><a href="#集成分析工具" class="headerlink" title="集成分析工具"></a>集成分析工具</h3><p>在 <code>layout/_partial/head.ejs</code> 中添加 Google Analytics 或其他分析工具的代码：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">&lt;% if (theme.analytics.google) &#123; %&gt;</span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">async</span> <span class="attr">src</span>=<span class="string">&quot;https://www.googletagmanager.com/gtag/js?id=&lt;%= theme.analytics.google %&gt;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">    <span class="variable language_">window</span>.<span class="property">dataLayer</span> = <span class="variable language_">window</span>.<span class="property">dataLayer</span> || [];</span></span><br><span class="line"><span class="language-javascript">    <span class="keyword">function</span> <span class="title function_">gtag</span>(<span class="params"></span>)&#123;dataLayer.<span class="title function_">push</span>(<span class="variable language_">arguments</span>);&#125;</span></span><br><span class="line"><span class="language-javascript">    <span class="title function_">gtag</span>(<span class="string">&#x27;js&#x27;</span>, <span class="keyword">new</span> <span class="title class_">Date</span>());</span></span><br><span class="line"><span class="language-javascript">    <span class="title function_">gtag</span>(<span class="string">&#x27;config&#x27;</span>, <span class="string">&#x27;&lt;%= theme.analytics.google %&gt;&#x27;</span>);</span></span><br><span class="line"><span class="language-javascript">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="❓-常见问题"><a href="#❓-常见问题" class="headerlink" title="❓ 常见问题"></a>❓ 常见问题</h2><h3 id="Q-如何修改主题颜色？"><a href="#Q-如何修改主题颜色？" class="headerlink" title="Q: 如何修改主题颜色？"></a>Q: 如何修改主题颜色？</h3><p>A: 编辑 <code>themes/bento-theme/source/css/style.css</code>，修改 <code>:root</code> 中的 CSS 变量即可。</p>
+<h3 id="Q-为什么我的样式没有生效？"><a href="#Q-为什么我的样式没有生效？" class="headerlink" title="Q: 为什么我的样式没有生效？"></a>Q: 为什么我的样式没有生效？</h3><p>A: 尝试清除缓存并重新生成：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<h3 id="Q-如何添加自定义-CSS？"><a href="#Q-如何添加自定义-CSS？" class="headerlink" title="Q: 如何添加自定义 CSS？"></a>Q: 如何添加自定义 CSS？</h3><p>A: 在 <code>source/css/</code> 目录下创建自定义 CSS 文件，然后在 <code>layout.ejs</code> 中引入。</p>
+<h3 id="Q-支持哪些浏览器？"><a href="#Q-支持哪些浏览器？" class="headerlink" title="Q: 支持哪些浏览器？"></a>Q: 支持哪些浏览器？</h3><p>A: Bento Theme 支持所有现代浏览器的最新版本，包括 Chrome、Firefox、Safari 和 Edge。</p>
+<h3 id="Q-可以用于商业项目吗？"><a href="#Q-可以用于商业项目吗？" class="headerlink" title="Q: 可以用于商业项目吗？"></a>Q: 可以用于商业项目吗？</h3><p>A: 可以，Bento Theme 采用 MIT 许可证，可以自由使用和修改。</p>
+<h2 id="🤝-贡献"><a href="#🤝-贡献" class="headerlink" title="🤝 贡献"></a>🤝 贡献</h2><p>欢迎提交 Issue 和 Pull Request 来帮助改进这个主题！</p>
+<h2 id="📄-许可证"><a href="#📄-许可证" class="headerlink" title="📄 许可证"></a>📄 许可证</h2><p>MIT License - 详见 <a href="https://github.com/yourusername/hexo-theme-bento/blob/main/LICENSE">LICENSE</a> 文件</p>
+<h2 id="🔗-相关资源"><a href="#🔗-相关资源" class="headerlink" title="🔗 相关资源"></a>🔗 相关资源</h2><ul>
+<li><a href="https://hexo.io/docs/">Hexo 官方文档</a></li>
+<li><a href="https://ejs.co/">EJS 模板语法</a></li>
+<li><a href="https://www.bento-grid.com/">Bento Grid 设计灵感</a></li>
+</ul>
+<hr>
+<p><strong>开始使用 Bento Theme，打造属于你的独特博客吧！</strong> 🎉</p>
+<p>如果有任何问题或建议，欢迎在 <a href="https://github.com/yourusername/hexo-theme-bento/issues">GitHub Issues</a> 中提出。</p>
+]]></content>
+      <categories>
+        <category>技术分享</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>主题</tag>
+        <tag>前端开发</tag>
+        <tag>Web设计</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>RustyDrive-Streamer 架构设计与实现思路记录</title>
+    <url>/RustyDrive-Streamer/</url>
+    <content><![CDATA[<h2 id="RustyDrive-Streamer：基于-Rust-的-OneDrive-Emby-中间件设计记录"><a href="#RustyDrive-Streamer：基于-Rust-的-OneDrive-Emby-中间件设计记录" class="headerlink" title="RustyDrive-Streamer：基于 Rust 的 OneDrive + Emby 中间件设计记录"></a>RustyDrive-Streamer：基于 Rust 的 OneDrive + Emby 中间件设计记录</h2><blockquote>
+<p>项目代号：RustyDrive-Streamer<br>目标：构建一个高性能、可增量同步、支持 Emby 播放直链的 OneDrive 中间件服务。</p>
+</blockquote>
+<hr>
+<h2 id="一、项目背景"><a href="#一、项目背景" class="headerlink" title="一、项目背景"></a>一、项目背景</h2><p>在使用 Emby 对接 OneDrive 资源时，存在几个核心问题：</p>
+<ol>
+<li>Emby 不直接支持 OneDrive 元数据管理</li>
+<li>直链存在有效期限制</li>
+<li>API 存在限流</li>
+<li>文件增量同步效率问题</li>
+</ol>
+<p>参考项目：</p>
+<ul>
+<li>🔗 GitHub 项目：bpking1&#x2F;embyExternalUrl</li>
+<li>🔗 技术文章：从Emby直链初识NJS模块</li>
+</ul>
+<p>最终决定使用 <strong>Rust 构建高并发中间件</strong>，彻底解决同步效率与播放稳定性问题。</p>
+<hr>
+<h2 id="一、系统总体架构设计"><a href="#一、系统总体架构设计" class="headerlink" title="一、系统总体架构设计"></a>一、系统总体架构设计</h2><h2 id="架构分层"><a href="#架构分层" class="headerlink" title="架构分层"></a>架构分层</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">OneDrive (Microsoft Graph API)</span><br><span class="line">          ↓</span><br><span class="line">     Rust 中间件</span><br><span class="line">          ↓</span><br><span class="line">SQLite 数据库</span><br><span class="line">          ↓</span><br><span class="line">.strm 文件生成</span><br><span class="line">          ↓</span><br><span class="line">Emby 读取播放</span><br></pre></td></tr></table></figure>
+
+<h3 id="输入端"><a href="#输入端" class="headerlink" title="输入端"></a>输入端</h3><ul>
+<li>对接 Microsoft Graph API</li>
+<li>拉取文件元数据（id &#x2F; name &#x2F; cTag &#x2F; folder）</li>
+</ul>
+<h3 id="存储端"><a href="#存储端" class="headerlink" title="存储端"></a>存储端</h3><ul>
+<li>SQLite 维护文件映射关系</li>
+<li>支持增量扫描</li>
+<li>支持断点续传</li>
+</ul>
+<h3 id="输出端"><a href="#输出端" class="headerlink" title="输出端"></a>输出端</h3><ol>
+<li>本地 <code>.strm</code> 文件系统结构</li>
+<li>HTTP 播放服务（302 重定向至直链）</li>
+</ol>
+<hr>
+<h2 id="二、技术栈选型（Rust-Crates）"><a href="#二、技术栈选型（Rust-Crates）" class="headerlink" title="二、技术栈选型（Rust Crates）"></a>二、技术栈选型（Rust Crates）</h2><table>
+<thead>
+<tr>
+<th>功能</th>
+<th>技术</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>异步运行时</td>
+<td>tokio</td>
+</tr>
+<tr>
+<td>Web 框架</td>
+<td>axum</td>
+</tr>
+<tr>
+<td>HTTP 客户端</td>
+<td>reqwest</td>
+</tr>
+<tr>
+<td>数据库</td>
+<td>sqlx (sqlite)</td>
+</tr>
+<tr>
+<td>JSON 解析</td>
+<td>serde &#x2F; serde_json</td>
+</tr>
+<tr>
+<td>并发控制</td>
+<td>tokio::sync</td>
+</tr>
+<tr>
+<td>递归支持</td>
+<td>async-recursion</td>
+</tr>
+</tbody></table>
+<p>核心设计目标：</p>
+<ul>
+<li>全异步</li>
+<li>高并发</li>
+<li>非阻塞 IO</li>
+<li>数据一致性优先</li>
+</ul>
+<hr>
+<h2 id="三、数据库设计（SQLite）"><a href="#三、数据库设计（SQLite）" class="headerlink" title="三、数据库设计（SQLite）"></a>三、数据库设计（SQLite）</h2><p>数据库是系统核心，支持：</p>
+<ul>
+<li>增量更新</li>
+<li>删除检测</li>
+<li>Token 持久化</li>
+</ul>
+<hr>
+<h2 id="表一：settings"><a href="#表一：settings" class="headerlink" title="表一：settings"></a>表一：settings</h2><p>用于保存 OAuth2 信息</p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>key</td>
+<td>TEXT PK</td>
+<td>refresh_token &#x2F; access_token</td>
+</tr>
+<tr>
+<td>value</td>
+<td>TEXT</td>
+<td>对应值</td>
+</tr>
+<tr>
+<td>updated_at</td>
+<td>INTEGER</td>
+<td>更新时间</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="表二：files"><a href="#表二：files" class="headerlink" title="表二：files"></a>表二：files</h2><p>用于构建文件树与增量判断</p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>类型</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>id</td>
+<td>TEXT PK</td>
+<td>OneDrive 唯一 ID</td>
+</tr>
+<tr>
+<td>parent_id</td>
+<td>TEXT</td>
+<td>父目录</td>
+</tr>
+<tr>
+<td>name</td>
+<td>TEXT</td>
+<td>文件名</td>
+</tr>
+<tr>
+<td>is_folder</td>
+<td>BOOLEAN</td>
+<td>是否文件夹</td>
+</tr>
+<tr>
+<td>path</td>
+<td>TEXT</td>
+<td>本地路径</td>
+</tr>
+<tr>
+<td>ctag</td>
+<td>TEXT</td>
+<td>内容版本标识</td>
+</tr>
+<tr>
+<td>last_scan_ts</td>
+<td>INTEGER</td>
+<td>上次扫描时间</td>
+</tr>
+</tbody></table>
+<h3 id="两个关键字段说明"><a href="#两个关键字段说明" class="headerlink" title="两个关键字段说明"></a>两个关键字段说明</h3><ul>
+<li><code>cTag</code>：内容变更检测</li>
+<li><code>last_scan_ts</code>：用于标记-清除算法</li>
+</ul>
+<hr>
+<h2 id="四、核心模块设计"><a href="#四、核心模块设计" class="headerlink" title="四、核心模块设计"></a>四、核心模块设计</h2><hr>
+<h2 id="模块一：认证管理（Auth-Manager）"><a href="#模块一：认证管理（Auth-Manager）" class="headerlink" title="模块一：认证管理（Auth Manager）"></a>模块一：认证管理（Auth Manager）</h2><p>对接 Microsoft Graph：</p>
+<ul>
+<li>令牌刷新接口<br>POST<br><a href="https://login.microsoftonline.com/common/oauth2/v2.0/token">https://login.microsoftonline.com/common/oauth2/v2.0/token</a></li>
+</ul>
+<p>流程：</p>
+<ol>
+<li>启动读取 refresh_token</li>
+<li>请求前检查 access_token 是否过期</li>
+<li>401 自动刷新</li>
+<li>更新 SQLite</li>
+</ol>
+<p>设计原则：</p>
+<ul>
+<li>全局共享 Token</li>
+<li>原子更新</li>
+<li>自动重试机制</li>
+</ul>
+<hr>
+<h3 id="模块二：同步引擎（Sync-Engine）"><a href="#模块二：同步引擎（Sync-Engine）" class="headerlink" title="模块二：同步引擎（Sync Engine）"></a>模块二：同步引擎（Sync Engine）</h3><p>这是系统最复杂部分。</p>
+<h3 id="全量扫描流程"><a href="#全量扫描流程" class="headerlink" title="全量扫描流程"></a>全量扫描流程</h3><ol>
+<li>记录 current_scan_ts</li>
+<li>从 root 递归遍历</li>
+<li>分页处理 nextLink</li>
+<li>执行 Diff</li>
+</ol>
+<hr>
+<h3 id="Diff-逻辑"><a href="#Diff-逻辑" class="headerlink" title="Diff 逻辑"></a>Diff 逻辑</h3><p>情况 A：新增</p>
+<ul>
+<li>DB 无记录</li>
+<li>插入</li>
+<li>生成 .strm</li>
+</ul>
+<p>情况 B：修改</p>
+<ul>
+<li>cTag 不一致</li>
+<li>更新 DB</li>
+<li>重新生成 .strm</li>
+</ul>
+<p>情况 C：未变</p>
+<ul>
+<li>仅更新时间戳</li>
+<li>不进行 IO 操作</li>
+</ul>
+<p>→ 这一步极大提升性能</p>
+<hr>
+<h3 id="GC-清理机制"><a href="#GC-清理机制" class="headerlink" title="GC 清理机制"></a>GC 清理机制</h3><p>SQL 条件：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">last_scan_ts &lt; current_scan_ts</span><br></pre></td></tr></table></figure>
+
+<p>说明：</p>
+<ul>
+<li>本次扫描未更新</li>
+<li>说明已在云端删除</li>
+</ul>
+<p>操作：</p>
+<ul>
+<li>删除本地 .strm</li>
+<li>删除 DB 记录</li>
+</ul>
+<hr>
+<h2 id="模块三：播放服务器"><a href="#模块三：播放服务器" class="headerlink" title="模块三：播放服务器"></a>模块三：播放服务器</h2><p><code>.strm</code> 文件内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://IP:PORT/play/&#123;file_id&#125;</span><br></pre></td></tr></table></figure>
+
+<p>HTTP 服务流程：</p>
+<ol>
+<li>接收 <code>/play/:file_id</code></li>
+<li>调用 Graph API 获取 downloadUrl</li>
+<li>返回 302 重定向</li>
+<li>错误返回 404</li>
+</ol>
+<p>优点：</p>
+<ul>
+<li>直链永远最新</li>
+<li>不暴露真实 API 结构</li>
+<li>Emby 端无感知</li>
+</ul>
+<hr>
+<h2 id="五、关键难点分析"><a href="#五、关键难点分析" class="headerlink" title="五、关键难点分析"></a>五、关键难点分析</h2><hr>
+<h2 id="1️⃣-API-限流（429）"><a href="#1️⃣-API-限流（429）" class="headerlink" title="1️⃣ API 限流（429）"></a>1️⃣ API 限流（429）</h2><p>现象：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">HTTP 429 Too Many Requests</span><br></pre></td></tr></table></figure>
+
+<p>解决：</p>
+<ul>
+<li>指数退避（Exponential Backoff）</li>
+<li>读取 Retry-After</li>
+<li>tokio::time::sleep</li>
+<li>使用 Semaphore 控制并发（5~10）</li>
+</ul>
+<hr>
+<h2 id="2️⃣-文件名非法字符问题"><a href="#2️⃣-文件名非法字符问题" class="headerlink" title="2️⃣ 文件名非法字符问题"></a>2️⃣ 文件名非法字符问题</h2><p>OneDrive 允许：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">| : ? * &lt; &gt; &quot;</span><br></pre></td></tr></table></figure>
+
+<p>本地文件系统不允许。</p>
+<p>解决方案：</p>
+<figure class="highlight rust"><table><tr><td class="code"><pre><span class="line"><span class="keyword">fn</span> <span class="title function_">sanitize_filename</span>(name: &amp;<span class="type">str</span>) <span class="punctuation">-&gt;</span> <span class="type">String</span> &#123;</span><br><span class="line">    name.<span class="title function_ invoke__">replace</span>(|c: <span class="type">char</span>| <span class="string">r#&quot;\/:*?&quot;&lt;&gt;|&quot;#</span>.<span class="title function_ invoke__">contains</span>(c), <span class="string">&quot;_&quot;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>数据库需保存原始名称映射。</p>
+<hr>
+<h2 id="3️⃣-Emby-识别规范"><a href="#3️⃣-Emby-识别规范" class="headerlink" title="3️⃣ Emby 识别规范"></a>3️⃣ Emby 识别规范</h2><p>必须符合：</p>
+<p>电影：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Movies/Name (Year)/Name (Year).strm</span><br></pre></td></tr></table></figure>
+
+<p>剧集：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">TV/Name/Season 1/Name - S01E01.strm</span><br></pre></td></tr></table></figure>
+
+<p>原则：</p>
+<ul>
+<li>不打平目录</li>
+<li>保持 OneDrive 原结构</li>
+</ul>
+<hr>
+<h2 id="4️⃣-SQLite-事务优化"><a href="#4️⃣-SQLite-事务优化" class="headerlink" title="4️⃣ SQLite 事务优化"></a>4️⃣ SQLite 事务优化</h2><p>大量写入必须使用事务：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">BEGIN;</span><br><span class="line">...</span><br><span class="line">COMMIT;</span><br></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<ul>
+<li>提升数倍写入速度</li>
+<li>保证一致性</li>
+</ul>
+<hr>
+<h2 id="六、架构优势总结"><a href="#六、架构优势总结" class="headerlink" title="六、架构优势总结"></a>六、架构优势总结</h2><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>优势</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>并发性能</td>
+<td>Rust + tokio</td>
+</tr>
+<tr>
+<td>增量同步</td>
+<td>cTag + last_scan_ts</td>
+</tr>
+<tr>
+<td>播放稳定</td>
+<td>动态获取直链</td>
+</tr>
+<tr>
+<td>数据安全</td>
+<td>SQLite 持久化</td>
+</tr>
+<tr>
+<td>扩展性</td>
+<td>模块化结构</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="七、后续优化方向"><a href="#七、后续优化方向" class="headerlink" title="七、后续优化方向"></a>七、后续优化方向</h2><ol>
+<li>增量 Token（Graph Delta API）</li>
+<li>Web 控制台</li>
+<li>多账户支持</li>
+<li>Redis 缓存直链</li>
+<li>分布式部署</li>
+</ol>
+<hr>
+<h2 id="八、总结"><a href="#八、总结" class="headerlink" title="八、总结"></a>八、总结</h2><p>本项目本质是一个：</p>
+<blockquote>
+<p>高性能 OneDrive 文件同步 + Emby 播放代理中间件</p>
+</blockquote>
+<p>核心价值：</p>
+<ul>
+<li>解决 OneDrive 直链时效问题</li>
+<li>实现高效增量扫描</li>
+<li>规避 API 限流</li>
+<li>提供稳定播放体验</li>
+</ul>
+<p>技术关键词：</p>
+<p>Rust &#x2F; Graph API &#x2F; SQLite &#x2F; Async &#x2F; HTTP Redirect &#x2F; 增量同步</p>
+<hr>
+<p>如果后续进入代码实现阶段，可以再单独记录：</p>
+<ul>
+<li>数据结构设计</li>
+<li>Trait 抽象</li>
+<li>错误处理体系</li>
+<li>模块拆分方案</li>
+<li>Cargo Workspace 组织结构</li>
+</ul>
+<hr>
+]]></content>
+      <categories>
+        <category>技术分享</category>
+      </categories>
+      <tags>
+        <tag>Rust</tag>
+        <tag>OneDrive</tag>
+        <tag>Emby</tag>
+        <tag>Microsoft Graph</tag>
+        <tag>中间件</tag>
+        <tag>异步编程</tag>
+        <tag>SQLite</tag>
+        <tag>系统架构</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>RustyDrive-Streamer 架构设计与实现思路记录</title>
+    <url>/rustydrive_graph_api_guide/</url>
+    <content><![CDATA[<hr>
+<h2 id="RustyDrive-Streamer-博客记录"><a href="#RustyDrive-Streamer-博客记录" class="headerlink" title="RustyDrive Streamer 博客记录"></a>RustyDrive Streamer 博客记录</h2><p>本文档主要记录 RustyDrive Streamer 项目的杂项配置、Emby 数据库操作以及 Microsoft Graph API 的认证与使用流程。</p>
+<hr>
+<h2 id="1-Emby-数据库操作与播放问题"><a href="#1-Emby-数据库操作与播放问题" class="headerlink" title="1. Emby 数据库操作与播放问题"></a>1. Emby 数据库操作与播放问题</h2><h3 id="数据库路径配置"><a href="#数据库路径配置" class="headerlink" title="数据库路径配置"></a>数据库路径配置</h3><ul>
+<li>Emby 数据库路径：</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">EMBY_DATABASE_PATH=/home/one2rust/emby_config/data/library.db</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>优点：比手动维护映射路径更快捷方便。</li>
+</ul>
+<h3 id="302-重定向注意事项"><a href="#302-重定向注意事项" class="headerlink" title="302 重定向注意事项"></a>302 重定向注意事项</h3><ul>
+<li>必须使用 <code>ItemId</code> 才能避免从服务器转发。</li>
+<li>未知原因可能导致起播慢，需优化。</li>
+</ul>
+<hr>
+<h2 id="2-Microsoft-365-E5-账户与-OneDrive-配置"><a href="#2-Microsoft-365-E5-账户与-OneDrive-配置" class="headerlink" title="2. Microsoft 365 E5 账户与 OneDrive 配置"></a>2. Microsoft 365 E5 账户与 OneDrive 配置</h2><h3 id="申请与空间配置"><a href="#申请与空间配置" class="headerlink" title="申请与空间配置"></a>申请与空间配置</h3><ul>
+<li><a href="https://developer.microsoft.com/en-us/microsoft-365/dev-program">Microsoft 365 开发者计划 E5 申请</a></li>
+<li><a href="https://admin.microsoft.com/Adminportal/Home?source=applauncher#/users">设置 5TB OneDrive 空间</a></li>
+</ul>
+<hr>
+<h2 id="3-Microsoft-Graph-API-认证指南"><a href="#3-Microsoft-Graph-API-认证指南" class="headerlink" title="3. Microsoft Graph API 认证指南"></a>3. Microsoft Graph API 认证指南</h2><h3 id="3-1-环境变量"><a href="#3-1-环境变量" class="headerlink" title="3.1 环境变量"></a>3.1 环境变量</h3><p>项目所需的关键环境变量：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">MICROSOFT_CLIENT_ID=your-client-id-here</span><br><span class="line">MICROSOFT_CLIENT_SECRET=your-client-secret-here</span><br><span class="line">MICROSOFT_TENANT_ID=common</span><br><span class="line">MICROSOFT_REFRESH_TOKEN=your-refresh-token-here</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-2-注册-Azure-应用"><a href="#3-2-注册-Azure-应用" class="headerlink" title="3.2 注册 Azure 应用"></a>3.2 注册 Azure 应用</h3><ol>
+<li><p>访问 <a href="https://portal.azure.com/">Azure Portal</a> 并登录</p>
+</li>
+<li><p>进入 <strong>Azure Active Directory → 应用注册 → 新注册</strong></p>
+</li>
+<li><p>填写应用信息：</p>
+<ul>
+<li>名称：<code>RustyDrive Streamer</code></li>
+<li>支持的账户类型：个人账户 + 企业账户</li>
+<li>重定向 URI：<code>http://localhost:8080/auth/callback</code>（可选）</li>
+</ul>
+</li>
+<li><p>记录 <strong>Client ID</strong> 和 <strong>Tenant ID</strong></p>
+</li>
+<li><p>创建 <strong>客户端密钥</strong>（Client Secret）</p>
+</li>
+</ol>
+<h3 id="3-3-配置-API-权限"><a href="#3-3-配置-API-权限" class="headerlink" title="3.3 配置 API 权限"></a>3.3 配置 API 权限</h3><ul>
+<li>实际申请的权限如下：</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Directory.Read.All (应用 &amp; 委托)</span><br><span class="line">Files.Read.All (应用 &amp; 委托)</span><br><span class="line">Files.ReadWrite (委托)</span><br><span class="line">Files.ReadWrite.All (应用 &amp; 委托)</span><br><span class="line">offline_access (委托)</span><br><span class="line">Sites.Read.All (应用 &amp; 委托)</span><br><span class="line">User.Read (委托)</span><br><span class="line">User.Read.All (应用 &amp; 委托)</span><br><span class="line">User.ReadWrite.All (应用)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>授予管理员同意</strong>：权限必须管理员批准才能生效。</li>
+</ul>
+<hr>
+<h2 id="4-获取-Refresh-Token"><a href="#4-获取-Refresh-Token" class="headerlink" title="4. 获取 Refresh Token"></a>4. 获取 Refresh Token</h2><h3 id="4-1-授权代码流程（推荐）"><a href="#4-1-授权代码流程（推荐）" class="headerlink" title="4.1 授权代码流程（推荐）"></a>4.1 授权代码流程（推荐）</h3><ol>
+<li>构建授权 URL（个人账户或 E5 账户）</li>
+<li>浏览器登录并授权应用访问</li>
+<li>获取 <code>authorization_code</code> 并使用 <code>client_id</code>&#x2F;<code>client_secret</code> 交换 token</li>
+<li>记录 <code>refresh_token</code>，用于长期自动刷新</li>
+</ol>
+<h3 id="4-2-设备代码流程（CLI-场景）"><a href="#4-2-设备代码流程（CLI-场景）" class="headerlink" title="4.2 设备代码流程（CLI 场景）"></a>4.2 设备代码流程（CLI 场景）</h3><ol>
+<li>请求设备码</li>
+<li>用户在 <a href="https://microsoft.com/devicelogin">https://microsoft.com/devicelogin</a> 输入 code 并授权</li>
+<li>使用设备码轮询 token</li>
+<li>记录 <code>refresh_token</code></li>
+</ol>
+<hr>
+<h2 id="5-Token-生命周期与自动刷新机制"><a href="#5-Token-生命周期与自动刷新机制" class="headerlink" title="5. Token 生命周期与自动刷新机制"></a>5. Token 生命周期与自动刷新机制</h2><ul>
+<li>Refresh Token：长期有效，90 天滑动窗口，定期使用可无限续期</li>
+<li>Access Token：短期有效，程序自动刷新</li>
+<li>Rust 端实现自动刷新：</li>
+</ul>
+<figure class="highlight rust"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> token.<span class="title function_ invoke__">is_expired</span>() &#123;</span><br><span class="line">    <span class="title function_ invoke__">refresh_token</span>().<span class="keyword">await</span>?;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">if</span> response.<span class="title function_ invoke__">status</span>() == <span class="number">401</span> &#123;</span><br><span class="line">    auth_manager.<span class="title function_ invoke__">handle_401_error</span>().<span class="keyword">await</span>?;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>提前 5 分钟判断过期，保证请求不中断</li>
+</ul>
+<hr>
+<h2 id="6-常见问题与解决方案"><a href="#6-常见问题与解决方案" class="headerlink" title="6. 常见问题与解决方案"></a>6. 常见问题与解决方案</h2><table>
+<thead>
+<tr>
+<th>问题</th>
+<th>原因</th>
+<th>解决方案</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Token 刷新失败</td>
+<td>refresh_token 超期</td>
+<td>重新获取新的 refresh_token 并更新数据库</td>
+</tr>
+<tr>
+<td>权限不足</td>
+<td>API 权限未授予</td>
+<td>检查 Azure 应用权限，确保授予管理员同意</td>
+</tr>
+<tr>
+<td>无法访问 E5 OneDrive</td>
+<td>租户 ID 配置错误</td>
+<td>确认租户 ID，添加 <code>Sites.Read.All</code> 权限</td>
+</tr>
+<tr>
+<td>Client Secret 过期</td>
+<td>Azure 客户端密钥过期</td>
+<td>创建新密钥并更新 <code>.env</code></td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="7-安全建议"><a href="#7-安全建议" class="headerlink" title="7. 安全建议"></a>7. 安全建议</h2><ul>
+<li><p><strong>必须保护</strong>：client_secret、refresh_token、access_token</p>
+</li>
+<li><p><strong>避免</strong>：</p>
+<ul>
+<li>提交到 Git 仓库</li>
+<li>在日志打印完整 token</li>
+<li>与他人共享凭据</li>
+</ul>
+</li>
+<li><p>最佳实践：</p>
+<ul>
+<li>使用 <code>.env</code> 文件，并加入 <code>.gitignore</code></li>
+<li>限制 API 权限，仅授予必要权限</li>
+<li>定期轮换 client_secret</li>
+<li>监控 Azure 异常登录活动</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="8-测试配置"><a href="#8-测试配置" class="headerlink" title="8. 测试配置"></a>8. 测试配置</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 验证 access_token</span></span><br><span class="line">curl -X GET <span class="string">&#x27;https://graph.microsoft.com/v1.0/me/drive&#x27;</span> \</span><br><span class="line">  -H <span class="string">&quot;Authorization: Bearer YOUR_ACCESS_TOKEN&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 列出 OneDrive 根目录文件</span></span><br><span class="line">curl -X GET <span class="string">&#x27;https://graph.microsoft.com/v1.0/me/drive/root/children&#x27;</span> \</span><br><span class="line">  -H <span class="string">&quot;Authorization: Bearer YOUR_ACCESS_TOKEN&quot;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="9-总结流程"><a href="#9-总结流程" class="headerlink" title="9. 总结流程"></a>9. 总结流程</h2><ol>
+<li>注册 Azure 应用 → 获取 client_id、client_secret</li>
+<li>配置 API 权限 → 授权管理员同意</li>
+<li>获取 refresh_token（授权代码流程或设备代码流程）</li>
+<li>配置环境变量</li>
+<li>程序启动自动加载 refresh_token 并自动刷新 access_token</li>
+<li>定期维护 refresh_token，保证持续有效</li>
+</ol>
+<hr>
+<p>我帮你把 Nginx 反向代理与 302 劫持的配置整理进博客文档里，并在原来的博客结构中增加一节，方便完整记录。可以直接放在 Hexo 或 Markdown 博客中。</p>
+<hr>
+<h2 id="10-Nginx-反向代理与-302-劫持配置"><a href="#10-Nginx-反向代理与-302-劫持配置" class="headerlink" title="10. Nginx 反向代理与 302 劫持配置"></a>10. Nginx 反向代理与 302 劫持配置</h2><p>为了优化 Emby 播放和 RustyDrive Streamer 的直链获取，我们通过 Nginx 反向代理实现 302 响应透传，避免流量绕行服务器。以下配置适用于 Linux <code>/etc/nginx/sites-available/emby_302</code>：</p>
+<figure class="highlight nginx"><table><tr><td class="code"><pre><span class="line"><span class="comment"># /etc/nginx/sites-available/emby_302_fixed</span></span><br><span class="line"><span class="comment"># 修复版本：确保302重定向正确传递给客户端，流量不走服务器</span></span><br><span class="line"></span><br><span class="line"><span class="section">server</span> &#123;</span><br><span class="line">    <span class="attribute">listen</span> <span class="number">9096</span>;</span><br><span class="line">    <span class="attribute">server_name</span> <span class="number">127.0.0.1</span>;</span><br><span class="line"></span><br><span class="line">    <span class="attribute">access_log</span> /var/log/nginx/emby_access.log combined;</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 核心修复：禁止nginx自动跟随上游的HTTP重定向</span></span><br><span class="line">    <span class="comment"># 这是最关键的设置，必须放在server级别</span></span><br><span class="line">    <span class="attribute">proxy_intercept_errors</span> <span class="literal">off</span>;</span><br><span class="line">    <span class="attribute">proxy_redirect</span> <span class="literal">off</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 1. 拦截 /emby/videos/&#123;id&#125;/original 或 original.mp4</span></span><br><span class="line">    <span class="section">location</span> <span class="regexp">~* ^/emby/videos/(?&lt;emby_id&gt;[^/]+)/original(\.mp4)?$</span> &#123;</span><br><span class="line">        <span class="comment"># 转发到Rust服务获取OneDrive直链</span></span><br><span class="line">        <span class="attribute">proxy_pass</span> http://127.0.0.1:8080/play/emby/<span class="variable">$emby_id</span><span class="variable">$is_args</span><span class="variable">$args</span>;</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 禁用所有缓冲</span></span><br><span class="line">        <span class="attribute">proxy_buffering</span> <span class="literal">off</span>;</span><br><span class="line">        <span class="attribute">proxy_request_buffering</span> <span class="literal">off</span>;</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 【关键】不要修改上游的302响应，直接透传给客户端</span></span><br><span class="line">        <span class="comment"># proxy_redirect off 禁止nginx修改Location头</span></span><br><span class="line">        <span class="attribute">proxy_redirect</span> <span class="literal">off</span>;</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 保留上游的所有响应头，特别是Location</span></span><br><span class="line">        <span class="attribute">proxy_pass_header</span> Location;</span><br><span class="line">        <span class="attribute">proxy_pass_header</span> Set-Cookie;</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 超时设置（获取直链很快，不需要长时间等待）</span></span><br><span class="line">        <span class="attribute">proxy_connect_timeout</span> <span class="number">10s</span>;</span><br><span class="line">        <span class="attribute">proxy_send_timeout</span> <span class="number">10s</span>;</span><br><span class="line">        <span class="attribute">proxy_read_timeout</span> <span class="number">10s</span>;</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 转发客户端信息</span></span><br><span class="line">        <span class="attribute">proxy_set_header</span> Host <span class="variable">$host</span>;</span><br><span class="line">        <span class="attribute">proxy_set_header</span> X-Real-IP <span class="variable">$remote_addr</span>;</span><br><span class="line">        <span class="attribute">proxy_set_header</span> X-Forwarded-For <span class="variable">$proxy_add_x_forwarded_for</span>;</span><br><span class="line">        <span class="attribute">proxy_set_header</span> X-Forwarded-Proto <span class="variable">$scheme</span>;</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 【临时方案】如果Rust服务返回404（没有Emby映射），fallback到原生Emby</span></span><br><span class="line">        <span class="comment"># 这样可以保证在映射未建立时仍然可以播放</span></span><br><span class="line">        <span class="attribute">error_page</span> <span class="number">404</span> = <span class="variable">@emby_fallback</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 2. 拦截 /emby/videos/&#123;id&#125;/stream 或 stream.mp4</span></span><br><span class="line">    <span class="section">location</span> <span class="regexp">~* ^/emby/videos/(?&lt;emby_id&gt;[^/]+)/stream(\.mp4)?$</span> &#123;</span><br><span class="line">        <span class="attribute">proxy_pass</span> http://127.0.0.1:8080/play/emby/<span class="variable">$emby_id</span><span class="variable">$is_args</span><span class="variable">$args</span>;</span><br><span class="line"></span><br><span class="line">        <span class="attribute">proxy_buffering</span> <span class="literal">off</span>;</span><br><span class="line">        <span class="attribute">proxy_request_buffering</span> <span class="literal">off</span>;</span><br><span class="line">        <span class="attribute">proxy_redirect</span> <span class="literal">off</span>;</span><br><span class="line"></span><br><span class="line">        <span class="attribute">proxy_pass_header</span> Location;</span><br><span class="line">        <span class="attribute">proxy_pass_header</span> Set-Cookie;</span><br><span class="line"></span><br><span class="line">        <span class="attribute">proxy_connect_timeout</span> <span class="number">10s</span>;</span><br><span class="line">        <span class="attribute">proxy_send_timeout</span> <span class="number">10s</span>;</span><br><span class="line">        <span class="attribute">proxy_read_timeout</span> <span class="number">10s</span>;</span><br><span class="line"></span><br><span class="line">        <span class="attribute">proxy_set_header</span> Host <span class="variable">$host</span>;</span><br><span class="line">        <span class="attribute">proxy_set_header</span> X-Real-IP <span class="variable">$remote_addr</span>;</span><br><span class="line">        <span class="attribute">proxy_set_header</span> X-Forwarded-For <span class="variable">$proxy_add_x_forwarded_for</span>;</span><br><span class="line">        <span class="attribute">proxy_set_header</span> X-Forwarded-Proto <span class="variable">$scheme</span>;</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 【临时方案】如果Rust服务返回404，fallback到原生Emby</span></span><br><span class="line">        <span class="attribute">error_page</span> <span class="number">404</span> = <span class="variable">@emby_fallback</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Fallback到原生Emby（当没有映射关系时）</span></span><br><span class="line">    <span class="section">location</span> <span class="variable">@emby_fallback</span> &#123;</span><br><span class="line">        <span class="comment"># 直接转发到原生Emby服务器</span></span><br><span class="line">        <span class="comment"># 这里的$emby_id变量需要从原始location中捕获，但在named location中不可用</span></span><br><span class="line">        <span class="comment"># 使用$request_uri来获取原始请求</span></span><br><span class="line">        <span class="attribute">proxy_pass</span> http://127.0.0.1:8096<span class="variable">$uri</span><span class="variable">$is_args</span><span class="variable">$args</span>;</span><br><span class="line"></span><br><span class="line">        <span class="attribute">proxy_set_header</span> Host <span class="variable">$host</span>;</span><br><span class="line">        <span class="attribute">proxy_set_header</span> X-Real-IP <span class="variable">$remote_addr</span>;</span><br><span class="line">        <span class="attribute">proxy_set_header</span> X-Forwarded-For <span class="variable">$proxy_add_x_forwarded_for</span>;</span><br><span class="line">        <span class="attribute">proxy_set_header</span> X-Forwarded-Proto <span class="variable">$scheme</span>;</span><br><span class="line"></span><br><span class="line">        <span class="attribute">proxy_buffering</span> <span class="literal">off</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 3. 直接通过 OneDrive ID 播放的路径</span></span><br><span class="line">    <span class="section">location</span> <span class="regexp">~* ^/play/(?&lt;drive_id&gt;[^/]+)/(?&lt;file_id&gt;[^/]+)$</span> &#123;</span><br><span class="line">        <span class="attribute">set</span> <span class="variable">$backend_drive_id</span> <span class="variable">$drive_id</span>;</span><br><span class="line">        <span class="attribute">set</span> <span class="variable">$backend_file_id</span> <span class="variable">$file_id</span>;</span><br><span class="line">        <span class="attribute">proxy_pass</span> http://127.0.0.1:8080/play/<span class="variable">$backend_drive_id</span>/<span class="variable">$backend_file_id</span><span class="variable">$is_args</span><span class="variable">$args</span>;</span><br><span class="line"></span><br><span class="line">        <span class="attribute">proxy_buffering</span> <span class="literal">off</span>;</span><br><span class="line">        <span class="attribute">proxy_request_buffering</span> <span class="literal">off</span>;</span><br><span class="line">        <span class="attribute">proxy_redirect</span> <span class="literal">off</span>;</span><br><span class="line"></span><br><span class="line">        <span class="attribute">proxy_pass_header</span> Location;</span><br><span class="line">        <span class="attribute">proxy_pass_header</span> Set-Cookie;</span><br><span class="line"></span><br><span class="line">        <span class="attribute">proxy_set_header</span> Host <span class="variable">$host</span>;</span><br><span class="line">        <span class="attribute">proxy_set_header</span> X-Real-IP <span class="variable">$remote_addr</span>;</span><br><span class="line">        <span class="attribute">proxy_set_header</span> X-Forwarded-For <span class="variable">$proxy_add_x_forwarded_for</span>;</span><br><span class="line">        <span class="attribute">proxy_set_header</span> X-Forwarded-Proto <span class="variable">$scheme</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 4. 其他所有请求转发给原生 Emby</span></span><br><span class="line">    <span class="section">location</span> / &#123;</span><br><span class="line">        <span class="attribute">proxy_pass</span> http://127.0.0.1:8096;</span><br><span class="line"></span><br><span class="line">        <span class="attribute">proxy_set_header</span> Host <span class="variable">$host</span>;</span><br><span class="line">        <span class="attribute">proxy_set_header</span> X-Real-IP <span class="variable">$remote_addr</span>;</span><br><span class="line">        <span class="attribute">proxy_set_header</span> X-Forwarded-For <span class="variable">$proxy_add_x_forwarded_for</span>;</span><br><span class="line">        <span class="attribute">proxy_set_header</span> X-Forwarded-Proto <span class="variable">$scheme</span>;</span><br><span class="line"></span><br><span class="line">        <span class="attribute">proxy_buffering</span> <span class="literal">off</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="配置说明"><a href="#配置说明" class="headerlink" title="配置说明"></a>配置说明</h3><ol>
+<li><strong>proxy_redirect off</strong>：禁止 Nginx 修改上游 Location 响应头，确保 302 重定向直接透传给客户端。</li>
+<li><strong>proxy_pass_header Location</strong>：保留原始 Location 响应头。</li>
+<li><strong>proxy_buffering off</strong>：禁用缓冲，避免播放卡顿。</li>
+<li><strong>Fallback 机制</strong>：当 RustyDrive 无映射时，回退到原生 Emby，保证稳定播放。</li>
+<li><strong>超时设置</strong>：快速获取直链，避免客户端长时间等待。</li>
+</ol>
+<hr>
+<h2 id="参考资源"><a href="#参考资源" class="headerlink" title="参考资源"></a>参考资源</h2><ul>
+<li><a href="https://docs.microsoft.com/graph/api/overview">Microsoft Graph API 官方文档</a></li>
+<li><a href="https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-auth-code-flow">OAuth 2.0 授权代码流程</a></li>
+<li><a href="https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-device-code">OAuth 2.0 设备代码流程</a></li>
+<li><a href="https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app">Azure 应用快速入门</a></li>
+</ul>
+<hr>
+]]></content>
+      <categories>
+        <category>技术分享</category>
+      </categories>
+      <tags>
+        <tag>Rust</tag>
+        <tag>OneDrive</tag>
+        <tag>Emby</tag>
+        <tag>Microsoft Graph</tag>
+        <tag>中间件</tag>
+        <tag>异步编程</tag>
+        <tag>SQLite</tag>
+        <tag>系统架构</tag>
+      </tags>
+  </entry>
+</search>
